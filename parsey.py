@@ -15,7 +15,7 @@ from subprocess import Popen, PIPE
 from threading import Semaphore
 
 _universal_languages = {
-    'pt': 'Portuguese',
+    'sl': 'Slovenian',
 }
 
 
