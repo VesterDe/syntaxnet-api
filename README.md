@@ -1,11 +1,11 @@
-Dockerized SyntaxNet API for Portuguese
+Dockerized SyntaxNet API for Slovenian
 =======================================
 
-__NOTE__: this is a fork from [https://github.com/danielperezr88/syntaxnet-api](https://github.com/danielperezr88/syntaxnet-api) which I changed to work for Portuguese only, it saves much memory, since it loads only the Portuguese model.
+__NOTE__: this is a fork from [https://github.com/davidsbatista/syntaxnet-api](https://github.com/davidsbatista/syntaxnet-api) which is edited to only server 1 language for performance reasons.
 
 Install
 
-    git clone https://github.com/davidsbatista/syntaxnet-api
+    git clone https://github.com/VesterDe/syntaxnet-api
     cd syntaxnet-api
     docker build . -t syntaxnet-api
     
