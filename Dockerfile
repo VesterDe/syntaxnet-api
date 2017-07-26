@@ -1,6 +1,6 @@
 FROM ubuntu:15.10
 
-MAINTAINER danielperezr88 <danielperezr88@gmail.com>
+MAINTAINER VesterDe <demjan.vester@gmail.com>
 
 RUN apt-get update && apt-get install -y \
         build-essential \
@@ -60,7 +60,7 @@ RUN mkdir /bazel && \
 
 RUN pip install -U protobuf==3.0.0b2
 RUN pip install asciitree
-RUN git clone --recursive https://github.com/danielperezr88/syntaxnet-api.git \
+RUN git clone --recursive https://github.com/VesterDe/syntaxnet-api.git \
     && cd /syntaxnet-api/tensorflow-models \
     && git checkout dee751fafb66e511c6fec02b572670b50bc517fa \
     && cd /syntaxnet-api \
@@ -88,9 +88,9 @@ RUN cd /syntaxnet-api/tensorflow-models/syntaxnet \
 
 RUN mkdir /syntaxnet-api/tensorflow-models/syntaxnet/universal_models \
     && cd /syntaxnet-api/tensorflow-models/syntaxnet/universal_models \
-    && wget http://download.tensorflow.org/models/parsey_universal/Portuguese.zip \
-    && unzip Portuguese.zip \
-    && rm Portuguese.zip
+    && wget http://download.tensorflow.org/models/parsey_universal/Slovenian.zip \
+    && unzip Slovenian.zip \
+    && rm Slovenian.zip
 
 RUN apt-get update && apt-get -y install python3-pip
 
